@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: 0;
+}
 .body {
     padding: 0;
     margin: 0;
@@ -7,19 +14,16 @@
     border-top: 10px black solid;
     border-bottom: groove 1px;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 9;
     background-color: white;
     width: 100%;
-    right: 0;
 	 height: 20vh;
 }
 .header-container {
     text-align: center;
     display: flex;
     width: 100%;
-
+	 margin-bottom: 20px;
 }
 .column-header {
     max-width: 100%
@@ -58,64 +62,49 @@
     border-bottom: 3px black solid;
     transition: 0.1s linear;
 }
-.link-with-no-decoration {
-	text-decoration: none;
-	color: aliceblue;
-}
 .article-main-div {
     width: 100%;
     top: 0;
     left: 0;
-    position: absolute;
-    z-index: 3;
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
+	 margin-bottom: 70vh;
 }
-.first-article {
+.first-article, .second-article, .third-article  {
     width: 100%;
     top: 0;
     left: 0;
     background-image:url(../images/main-jpg-files/foto/christmas_main.jpg);
     background-size: cover;
     background-position: center;
-    z-index: 3;
+    z-index: 5;
     display: flex;
-    justify-content: center;
-    flex-flow: wrap-reverse;
+    justify-content: flex-end;
+    flex-direction: column;
     height: 100vh;
+	 align-items: center;
+	 position: relative;
 }
 .second-article {
-    width: 100%;
-    top: 0;
-    left: 0;
     background-image:url(../images/main-jpg-files/foto/second_article.jpg);
-    background-size: cover;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    background-position: center;
-    flex-flow: wrap-reverse;
-    height: 100vh;
 }
 .third-article {
-    width: 100%;
-    top: 0;
-    left: 0;
     background-image:url(../images/main-jpg-files/foto/third_article.jpg);
-    background-size: cover;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    background-position: center;
-    flex-flow: wrap-reverse;
-    height: 100vh;
-
 }
+.article-heading {
+	margin-bottom: 50px;
+	font-family: "Candara", sans-serif;
+	color: rgba(255, 255, 255, 0.8);
+}
+/*
 .empty-div {
     z-index: 3;
-    height: 50vh;
+    height: 70vh;
 }
+*/
 .button-submit {
     background-color: rgba(255, 255, 255, 0.6);
     border: none;
@@ -132,11 +121,10 @@
     left: 0;
     position: fixed;
     background-color: black;
-    z-index: 2;
-	 height: 50vh;
-}
-.footer-logo {
-    height: 40px;
+    z-index: 1;
+	 height: 70vh;
+	 display: flex;
+    justify-content: center;
 }
 .footer-sections {
     bottom: 0;
@@ -145,15 +133,8 @@
     box-sizing: border-box;
     display: flex;
     width: 100%;
-
-}
-.left-footer-section {
-    height: 250px;
-    color: white;
-}
-.left-footer-heading {
-    padding: 20px 0 20px 0;
-    text-align: center;
+    padding: 20px;
+	 height: 400px;
 }
 .right-footer-section {
     justify-content: flex-end;
@@ -163,15 +144,14 @@
     padding-bottom: 20px;
     padding-right: 10px;
 }
-.middle-footer-section {
+.middle-footer-section, .left-footer-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     color: white;
 }
-.middle-footer-heading {
-    padding: 20px 0 20px 0;
-    text-align: center;
+.middle-footer-heading, .left-footer-heading  {
+    padding: 20px 0 20px 40px;
     font-size: large;
     font-family: "Candara", sans-serif;
 }
@@ -183,18 +163,14 @@
 }
 .footer-logo-image {
     width: 150px;
-	 padding: 20px
+	 padding: 50px 0 50px 0;
 }
-.bottom-left-list {
+
+.bottom-middle-list, .bottom-left-list {
     list-style: none;
-    padding-left: 100px;
     line-height: 27px;
-    font-family: "Candara", sans-serif;
-}
-.bottom-middle-list {
-    list-style: none;
-    padding-left: 100px;
-    line-height: 27px;
+	 font-family: "Candara", sans-serif;
+	 padding: 20px 0 20px 40px;
 }
 .bottom-icon {
     width: 40px;
@@ -204,10 +180,26 @@
 .maximum-height {
     max-height: 30px;
 }
-
-
-/
-
+.footer-bottom {
+	color: aliceblue;
+	padding: 10px 0 10px 0;
+	display: flex;
+	border-top: solid 1px rgba(255, 255, 255, 0.2);
+}
+.footer-bottom-to-right-side {
+	display: flex;
+   flex-direction: row-reverse;
+}
+.footer-bottom-left-side {
+	margin-top: 5px;
+}
+.bottom-nav-list {
+	color: #9B9B9B;
+	text-decoration: none;
+}
+.bottom-nav-list:hover {
+	border-bottom: 1px solid #9B9B9B;
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
