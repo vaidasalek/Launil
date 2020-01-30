@@ -71,7 +71,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-	 margin-bottom: 70vh;
+	 margin-bottom: 610px;
 }
 .first-article, .second-article, .third-article  {
     width: 100%;
@@ -99,12 +99,7 @@
 	font-family: "Candara", sans-serif;
 	color: rgba(255, 255, 255, 0.8);
 }
-/*
-.empty-div {
-    z-index: 3;
-    height: 70vh;
-}
-*/
+
 .button-submit {
     background-color: rgba(255, 255, 255, 0.6);
     border: none;
