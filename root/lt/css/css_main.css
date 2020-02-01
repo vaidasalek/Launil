@@ -38,6 +38,20 @@
     font-size: inherit;
 	 margin-bottom: 20px;
 }
+/*
+.nav-bars{
+	display: none;
+}
+*/
+@media screen and (max-width: 1024px) {
+	.button-header {
+		display:none;
+	}
+	.nav-bars {
+		display: block;
+		float: left;
+	}
+}
 #header-bar-hide-after-scroll {
 	transition: 0.4s;
 }
@@ -72,7 +86,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-	 margin-bottom: 50vh;
+	 margin-bottom: 80vh;
 }
 .first-article, .second-article, .third-article  {
     width: 100%;
@@ -120,7 +134,7 @@
     z-index: 1;
 	 display: flex;
     justify-content: center;
-	height: 50vh;
+	height: 80vh;
 		align-items: flex-end;
 
 }
