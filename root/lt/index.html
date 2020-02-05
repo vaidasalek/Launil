@@ -5,6 +5,8 @@
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		 <title>main_index</title>
 		 <link href="css/css_main.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		 <div>
@@ -23,16 +25,75 @@
 					</div>
 					<nav id="navbar">
 						 <ul class="navigation-list">
-							  <li><a href="index.html"><img src="images/main-jpg-files/icons/menu.svg" alt="Ieškoti" title="Ieškoti" class="nav-icon"></a></li>
-							  <li><a href="index.html" class="button-header">MIEGAMAJAM</a></li>
-							  <li><a href="index.html" class="button-header">SVETAINEI</a></li>
-							  <li><a href="index.html" class="button-header">VIRTUVEI</a></li>
-							  <li><a href="index.html" class="button-header">VALGOMAJAM</a></li>
-							  <li><a href="index.html" class="button-header">VONIOS KAMBARIUI</a></li>
-							  <li><a href="index.html" class="button-header">VAIKAMS</a></li>
-							  <li><a href="index.html" class="button-header">KITA</a></li>
-							  <li><a href="index.html" class="button-header">APIE MUS</a></li>
-							  <li><a href="index.html"><img src="images/main-jpg-files/icons/search.svg" alt="Ieškoti" title="Ieškoti" class="icons-header"></a></li>
+							  <li class="menu-bar-media">
+								  <a href="index.html">
+								  		<img src="images/main-jpg-files/icons/menu.svg" alt="Ieškoti" title="Ieškoti" class="nav-icon">
+								  </a>
+							  </li>
+							  <li class="dropdown">
+								  <a href="index.html" class="button-header dropbtn">MIEGAMAJAM</a>
+								  <div class="dropdown-content">
+										<a href="#" class="nav-dropdown-links">Link 1</a>
+										<a href="#" class="nav-dropdown-links">Link 2</a>
+										<a href="#" class="nav-dropdown-links">Link 3</a>
+								  </div>
+							  </li>
+							 <li class="dropdown">
+								  <a href="index.html" class="button-header dropbtn">SVETAINEI</a>
+								  <div class="dropdown-content">
+										<a href="#" class="nav-dropdown-links">Link 1</a>
+										<a href="#" class="nav-dropdown-links">Link 2</a>
+										<a href="#" class="nav-dropdown-links">Link 3</a>
+								  </div>
+							  </li>
+							 <li class="dropdown">
+								  <a href="index.html" class="button-header dropbtn">VIRTUVEI</a>
+								  <div class="dropdown-content">
+										<a href="#" class="nav-dropdown-links">Link 1</a>
+										<a href="#" class="nav-dropdown-links" class="nav-dropdown-links">Link 2</a>
+										<a href="#" class="nav-dropdown-links">Link 3</a>
+								  </div>
+							  </li>
+							 <li class="dropdown">
+								  <a href="index.html" class="button-header dropbtn">VALGOMAJAM</a>
+								  <div class="dropdown-content">
+										<a href="#" class="nav-dropdown-links">Link 1</a>
+										<a href="#" class="nav-dropdown-links">Link 2</a>
+										<a href="#" class="nav-dropdown-links">Link 3</a>
+								  </div>
+							  </li>
+							 <li class="dropdown">
+								  <a href="index.html" class="button-header dropbtn">VONIOS KAMBARIUI</a>
+								  <div class="dropdown-content">
+										<a href="#" class="nav-dropdown-links">Link 1</a>
+										<a href="#" class="nav-dropdown-links">Link 2</a>
+										<a href="#" class="nav-dropdown-links">Link 3</a>
+								  </div>
+							  </li>
+							 <li class="dropdown">
+								  <a href="index.html" class="button-header dropbtn">VAIKAMS</a>
+								  <div class="dropdown-content">
+										<a href="#" class="nav-dropdown-links">Link 1</a>
+										<a href="#" class="nav-dropdown-links">Link 2</a>
+										<a href="#" class="nav-dropdown-links">Link 3</a>
+								  </div>
+							  </li>
+							 <li class="dropdown">
+								  <a href="index.html" class="button-header dropbtn">KITA</a>
+								  <div class="dropdown-content">
+										<a href="#" class="nav-dropdown-links">Link 1</a>
+										<a href="#" class="nav-dropdown-links">Link 2</a>
+										<a href="#" class="nav-dropdown-links">Link 3</a>
+								  </div>
+							  </li>
+							 <li class="dropdown">
+								  <a href="index.html" class="button-header dropbtn">APIE MUS</a>
+								  <div class="dropdown-content">
+										<a href="#" class="nav-dropdown-links">Link 1</a>
+										<a href="#" class="nav-dropdown-links">Link 2</a>
+										<a href="#" class="nav-dropdown-links">Link 3</a>
+								  </div>
+							  </li>
 						 </ul>
 					</nav>
 			  </header>
@@ -104,6 +165,6 @@
 					  </div>
 			  </footer>
 		 </div>
-		 <script src="js/main.js"></script>
+
 	</body>
 </html>
